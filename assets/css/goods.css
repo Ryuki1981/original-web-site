@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: serif;
+    background-color: gray;
+    font-weight: bold;
+    position: relative;
+}
+
+/* header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.header-left>img{
+    height: 10vh;
+    border-radius: 20%;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.header-right>p{
+    font-size: 30px;
+    font-weight: bold;
+    color: orange;
+}
+
+@media screen and (max-width:780px){
+    .header-right p{
+        display: none;
+    }
+} 
+
+.header-menu{
+    color: white;
+}
+
+.header-li>a{
+    color: white;
+}
+
+.header-li>a:hover{
+    color: orange;
+}
+
+.header-middle{
+    margin-right: 3%;
+}
+
+/* main */
+main{
+    width: 86vw;
+    margin: 0 auto;
+}
+
+.main-div{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+/* sec-1 */
+h1{
+    font-size: 40px;
+    color: orange;
+    background-color: black;
+}
+@media screen and (max-width:780px){
+    h1{
+        font-size: 25px;
+    }
+} 
+
+.sec-1{
+    height: 60vh;
+    width: 100%;
+    background-color: white;
+}
+
+@media screen and (max-width:780px){
+    .sec-1{
+        height: 60vh;
+    }
+} 
+
+.button{
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+
+.button:hover{
+    color: orange;
+}
+
+.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+    width:94%;
+     margin:3% auto;
+ }
+ 
+ .slider img {
+     width:100%;/*スライダー内の画像を横幅100%に*/
+     height:40vh;
+     border: black 5px outset;
+     border-radius: 10%;
+ }
+
+ .slider img:hover{
+    border: orange 5px outset;
+ }
+ 
+ /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+ 
+ .slider .slick-slide {
+     margin:0 10px;
+ }
+ 
+ /*矢印の設定*/
+ 
+ /*戻る、次へ矢印の位置*/
+ .slick-prev, 
+ .slick-next {
+     position: absolute;/*絶対配置にする*/
+     top: 42%;
+     cursor: pointer;/*マウスカーソルを指マークに*/
+     outline: none;/*クリックをしたら出てくる枠線を消す*/
+     border-top: 2px solid #666;/*矢印の色*/
+     border-right: 2px solid #666;/*矢印の色*/
+     height: 15px;
+     width: 15px;
+ }
+ 
+ .slick-prev {/*戻る矢印の位置と形状*/
+     left: -1.5%;
+     transform: rotate(-135deg);
+ }
+ 
+ .slick-next {/*次へ矢印の位置と形状*/
+     right: -1.5%;
+     transform: rotate(45deg);
+ }
+ 
+ /*ドットナビゲーションの設定*/
+ 
+ .slick-dots {
+     text-align:center;
+     margin:20px 0 0 0;
+ }
+ 
+ .slick-dots li {
+     display:inline-block;
+     margin:0 5px;
+ }
+ 
+ .slick-dots button {
+     color: transparent;
+     outline: none;
+     width:8px;/*ドットボタンのサイズ*/
+     height:8px;/*ドットボタンのサイズ*/
+     display:block;
+     border-radius:50%;
+     background:#ccc;/*ドットボタンの色*/
+ }
+ 
+ .slick-dots .slick-active button{
+     background:#333;/*ドットボタンの現在地表示の色*/
+ }
+
+.p{
+    color: red;
+    font-size: 40px;
+}
+
+.batsu{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 90%;
+    margin-top: 1%;
+    padding:0 10px ;
+    background-color: black;
+    color: orange;
+    border-radius: 20%;
+}
+
+.batsu:hover{
+    background-color: orange;
+    color: black;
+}
+
+.moji{
+    font-size: 30px;
+}
+
+.clock-parent-active{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    position: fixed;
+    display: none;
+}
+
+.clock-parent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    position: fixed;
+    display: block;
+}
+
+@media screen and (max-width:780px){
+    div.clock{
+        width: 65vw;
+        height: 75vh;
+    }
+} 
+
+.clock{
+    border: orange 5px solid;
+    background-color: white;
+    width: 40vw;
+    height: 45VW;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock>img{
+    width: 90%;
+}
+
+/* sec-2 */
+h2{
+    font-size: 40px;
+    color: orange;
+    background-color: black;
+}
+@media screen and (max-width:780px){
+    h2{
+        font-size: 25px;
+    }
+} 
+
+.sec-2{
+    height: 40vh;
+    width: 100%;
+    background-color: white;
+}
+
+@media screen and (max-width:780px){
+    .sec-2{
+        height: 30vh;
+    }
+} 
+
+.sec-6-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 40%;
+    width: 85%;
+    margin: 5% auto;
+}
+
+.busi-con{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 45vw;
+}
+
+.busi-con>div{
+    border: 2px black solid;
+    height: 53%;
+    text-align: center;
+    background-color: black;
+    color: orange;
+    padding: 5px;
+    border-radius: 15%;
+}
+
+@media screen and (max-width:780px){
+    .sec-6-div .indi-con{
+        display: none;
+    }
+} 
+
+@media screen and (max-width:780px){
+    .busi-con div{
+        display: none;
+    }
+} 
+
+.busi-con>ul{
+    margin-left: 10%;
+}
+
+.indi-con{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.indi-con>div{
+    border: 2px black solid;
+    height: 53%;
+    text-align: center;
+    background-color: black;
+    color: orange;
+    padding: 5px;
+    border-radius: 15%;
+}
+
+.indi-con>p{
+    width: 70%;
+    margin-left: 5%;
+}
+
+/* footer */
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 25vh;
+}
+
+@media screen and (max-width:780px){
+    footer {
+        flex-direction: column;
+        height: 80vh;
+    }
+} 
