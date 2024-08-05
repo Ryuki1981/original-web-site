@@ -105,6 +105,18 @@ header{
     position: relative;
 }
 
+@keyframes img-change {
+    0%{
+        background-image: url(../img/宇宙飛行士.jpg);
+    }
+    50%{
+        background-image: url(../img/玉.jpg);
+    }
+    100%{
+        background-image: url(../img/森男.jpg);
+    }
+} 
+
 @media screen and (max-width:780px){
     section.sec-1{
         background-size: 100vw 100vh;
@@ -278,18 +290,6 @@ header{
     text-align: center;
     padding-left: 5%;
 }
-
-@keyframes img-change {
-    0%{
-        background-image: url(../img/宇宙飛行士.jpg);
-    }
-    50%{
-        background-image: url(../img/玉.jpg);
-    }
-    100%{
-        background-image: url(../img/森男.jpg);
-    }
-} 
 
 h1{
     font-size: 90px;
